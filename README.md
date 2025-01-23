@@ -158,6 +158,7 @@ Para rodar a aplicação clone o repositório na máquina e acesse a pasta do me
 - Melhorar a documentação do swagger para facilitar o entendimento a outros devs / usuários
 - Criar documentação técnica da aplicação para os devs
 - Implementar o connection retry no MongoDB e RabbitMQ para uma aplicação resiliente
+- Teste de carga na api
 
 ## Conclusão da Solução Desenvolvida
 
