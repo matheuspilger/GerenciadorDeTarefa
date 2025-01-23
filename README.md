@@ -106,8 +106,29 @@ Controlador para gerenciamento de tarefas.
     - Status 400 para erros de validação.
 
 ## Tecnologias
-- **ASP.NET Core**: Framework utilizado para construção dos controladores.
-- **MediatR**: Usado para mediar comandos e handlers, promovendo a separação de responsabilidades.
+- **RabbitMQ**:
+  - Gerenciamento de mensagens assíncronas.
+  - Comunicação entre microserviços.
+
+- **MongoDB**:
+  - Armazenamento de dados não estruturados.
+  - Conexão com a aplicação utilizando MongoDB Driver.
+
+- **Docker**:
+  - Configuração de containers para ambientes de desenvolvimento e produção.
+  - Facilita a execução isolada de serviços.
+
+- **FluentAPI**:
+  - Configuração de modelos de dados e relacionamentos.
+  - Criação de migrações e mapeamento de objetos para banco de dados.
+
+- **ASP.NET Core**:
+  - Desenvolvimento de APIs RESTful e aplicações web.
+  - Framework leve e modular para criação de soluções de alta performance.
+
+- **MediatR**:
+  - Implementação do padrão Mediator para facilitar a comunicação entre componentes sem dependências diretas.
+  - Facilita a utilização de CQRS (Command Query Responsibility Segregation).
 
 ---
 
