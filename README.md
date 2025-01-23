@@ -118,9 +118,9 @@ Controlador para gerenciamento de tarefas.
   - Configuração de containers para ambientes de desenvolvimento e produção.
   - Facilita a execução isolada de serviços.
 
-- **FluentAPI**:
-  - Configuração de modelos de dados e relacionamentos.
-  - Criação de migrações e mapeamento de objetos para banco de dados.
+- **FluentValidation**:
+  - Validação de objetos utilizando uma abordagem fluente.
+  - Regras de validação definidas de forma clara e concisa.
 
 - **ASP.NET Core**:
   - Desenvolvimento de APIs RESTful e aplicações web.
