@@ -148,8 +148,16 @@ Para rodar a aplicação clone o repositório na máquina e acesse a pasta do me
 - Criar controle para as tarefas não volterem ao status pendente após estar em Andamento ou Concluidas
 - Criar autenticação do usuário via api (JWT)
 - Adicionar controle de estimativa nas tarefas
-- Adicionar anexo nas tarefas
+- Adicionar anexo nas tarefas para maior detalhamento
 - Adicionar novas detalhes no projeto
+- Gerar logs no Kibana/Elastic para monitoria e observabilidade
+- Subir a aplicação na nuvem para disponbilizar a api para homologação e testes
+- Adicionar teste de integração para testar o fluxo completo
+- Refatorar geração de relatórios (Separar em classes, não deixar somente no service)
+- Validar velocidade das queries no MongoDB com a estrutura atual
+- Melhorar a documentação do swagger para facilitar o entendimento a outros devs / usuários
+- Criar documentação técnica da aplicação para os devs
+- Implementar o connection retry no MongoDB e RabbitMQ para uma aplicação resiliente
 
 ## Conclusão da Solução Desenvolvida
 
