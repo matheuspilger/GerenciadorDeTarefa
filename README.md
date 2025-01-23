@@ -130,6 +130,16 @@ Controlador para gerenciamento de tarefas.
   - Implementação do padrão Mediator para facilitar a comunicação entre componentes sem dependências diretas.
   - Facilita a utilização de CQRS (Command Query Responsibility Segregation).
 
+## Como Rodar o Projeto
+
+Para rodar a aplicação clone o repositório na máquina e acesse a pasta do mesmo:
+
+- **Docker**:
+  - Execute o comando docker-compose up -d
+    
+- **Api**:
+  - Acesse a api pela seguinte URL: https://localhost:52967/swagger/index.html
+
 ---
 
 Para mais informações, consulte a documentação detalhada do código ou entre em contato.
