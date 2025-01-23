@@ -54,7 +54,7 @@ Controlador para gerenciamento de projetos.
 - **GET /api/Projeto/GetProjetos**
   - **Descrição:** Recupera uma lista de projetos.
   - **Parâmetros de Query:**
-    - `GetProjetoCommand.Dto` (opcional): Filtros para a busca de projetos.
+    - `GetProjetoCommand.Dto` (obrigatório): Filtros para a busca de projetos.
       - **Propriedades:**
         - `string IdUsuario`: Identificador do usuário para filtrar os projetos.
   - **Resposta:**
