@@ -1,0 +1,43 @@
+services:
+  gerenciadordetarefa.api:
+    image: ${DOCKER_REGISTRY-}gerenciadordetarefaapi
+    build:
+      context: .
+      dockerfile: GerenciadorDeTarefa.Api/Dockerfile
+    ports:
+        - 52965:8080
+        - 52967:8081
+    networks:
+        - gerenciadordetarefa_network
+    depends_on:
+        - mongodb
+        - rabbitmq
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+        - 5672:5672
+        - 15672:15672
+    expose:
+        - 15672
+        - 5672
+    volumes:
+        - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+        - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    networks:
+        - gerenciadordetarefa_network
+  mongodb:
+    image: mongo
+    container_name: mongo
+    ports:
+        - 27017:27017
+    volumes:
+        - mongodb_data:/mongodb
+    networks:
+        - gerenciadordetarefa_network
+networks:
+  gerenciadordetarefa_network:
+    driver: bridge
+volumes:
+  mongodb_data:
+    driver: local
