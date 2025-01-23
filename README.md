@@ -139,6 +139,21 @@ Para rodar a aplicação clone o repositório na máquina e acesse a pasta do me
     
 - **Api**:
   - Acesse a api pela seguinte URL: https://localhost:52967/swagger/index.html
+ 
+
+## Duvidas para o Refinamento / Melhorias Futuras
+
+- Criar um crud para cadastro de usuários
+- Criar novos relatórios para melhorar o controle dos usuários gerentes
+- Criar controle para as tarefas não volterem ao status pendente após estar em Andamento ou Concluidas
+- Criar autenticação do usuário via api (JWT)
+- Adicionar controle de estimativa nas tarefas
+- Adicionar anexo nas tarefas
+- Adicionar novas detalhes no projeto
+
+## Conclusão da Solução Desenvolvida
+
+A solução é uma aplicação desenvolvida com ASP.NET Core que utiliza RabbitMQ para comunicação assíncrona entre serviços, MongoDB como banco de dados NoSQL e Docker para containerização. A API pode ser acessada através de um endpoint Swagger, proporcionando uma interface interativa para testar os endpoints. O RabbitMQ foi utilizado para processar o histórico de modificação das tarefas de forma assíncrona, enquanto o MongoDB armazena dados de forma escalável. O uso do Docker permite rodar todos os serviços de maneira isolada e facilitar o gerenciamento do ambiente de desenvolvimento e produção. FluentValidation é utilizado para validar os dados de forma fluente, enquanto o MediatR implementa o padrão Mediator para comunicação desacoplada entre os componentes da aplicação.
 
 ---
 
